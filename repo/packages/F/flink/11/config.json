@@ -110,7 +110,7 @@
         "heap": {
           "description": "Heap size (MB) for the TaskManager JVM. This value has to be less or equal than memory.",
           "type": "number",
-          "default": 512,
+          "default": 1024,
           "minimum": 1
         },
         "memory-preallocation": {
@@ -205,6 +205,7 @@
       "type": "object",
       "properties": {
         "config-url": {
+          "default":"http://dcos-master.eastus.cloudapp.azure.com/service/hdfs/v1/endpoints",
           "type": "string",
           "description": "Base URL that serves HDFS config files (hdfs-site.xml, core-site.xml)."
         }
